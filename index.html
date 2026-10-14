@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nsergeevich — iPhone apps</title>
+<meta name="description" content="Small, focused iPhone apps by nsergeevich. THRIVE — level up your real life. Walking On — coming soon.">
+<link rel="canonical" href="https://nsergeevich.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nsergeevich.com/">
+<meta property="og:title" content="nsergeevich — iPhone apps">
+<meta property="og:description" content="Small, focused iPhone apps. THRIVE — level up your real life. Walking On — coming soon.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23111'/><text x='50' y='69' font-size='60' font-family='-apple-system,Helvetica,Arial,sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'>n</text></svg>">
+<style>
+  :root {
+    --bg: #fafafa;
+    --card: #ffffff;
+    --text: #111111;
+    --muted: #6b6b6b;
+    --line: #e6e6e6;
+    --accent: #111111;
+    --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0f;
+      --card: #18181a;
+      --text: #f2f2f2;
+      --muted: #9a9a9a;
+      --line: #2a2a2d;
+      --accent: #f2f2f2;
+      --accent-text: #111111;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 72px 20px 48px; }
+  header h1 { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--muted); }
+  .apps { display: grid; gap: 16px; margin: 48px 0; }
+  .app {
+    display: flex; gap: 18px; align-items: flex-start;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .icon { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .icon.placeholder {
+    display: grid; place-items: center;
+    border: 1.5px dashed var(--line);
+    color: var(--muted); font-size: 28px; font-weight: 600;
+  }
+  .app h2 { font-size: 20px; margin: 0 0 2px; }
+  .app .tag { margin: 0 0 4px; font-weight: 500; }
+  .app .desc { margin: 0; color: var(--muted); font-size: 15px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .btn {
+    display: inline-block; padding: 7px 14px; border-radius: 999px;
+    font-size: 15px; font-weight: 500; text-decoration: none;
+    border: 1px solid var(--line); color: var(--text);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .soon {
+    display: inline-block; margin-top: 10px; padding: 3px 10px; border-radius: 999px;
+    font-size: 13px; color: var(--muted); border: 1px solid var(--line);
+  }
+  .contact { border-top: 1px solid var(--line); padding-top: 24px; }
+  .contact h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 6px; }
+  .contact p { margin: 0; }
+  a { color: inherit; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 420px) {
+    main { padding-top: 48px; }
+    .app { padding: 16px; gap: 14px; }
+    .icon { width: 60px; height: 60px; border-radius: 14px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>nsergeevich</h1>
+    <p>Small, focused iPhone apps.</p>
+  </header>
+
+  <section class="apps" aria-label="Apps">
+    <article class="app">
+      <img class="icon" src="thrive-icon.png" alt="THRIVE app icon" width="72" height="72">
+      <div>
+        <h2>THRIVE</h2>
+        <p class="tag">Level up your real life.</p>
+        <p class="desc">Habit &amp; goal tracker that looks like a 1983 phosphor terminal. Six life stats, XP, ranks and streaks. No account, nothing leaves your iPhone.</p>
+        <div class="links">
+          <a class="btn primary" href="https://apps.apple.com/app/id6768297854">App Store</a>
+          <a class="btn" href="https://thrive.nsergeevich.com/">Website</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="app">
+      <div class="icon placeholder" aria-hidden="true">W</div>
+      <div>
+        <h2>Walking On</h2>
+        <span class="soon">Coming soon</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:support@nsergeevich.com">support@nsergeevich.com</a></p>
+  </section>
+
+  <footer>&copy; 2026 nsergeevich</footer>
+</main>
+</body>
+</html>
